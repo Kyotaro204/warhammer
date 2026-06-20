@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warhammer 40,000 - Secret Level</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<div id="intro">
+    <h1>WARHAMMER 40,000</h1>
+    <h2>SECRET LEVEL</h2>
+
+    <button class="enterBtn" onclick="enterSite()">
+        ENTER THE IMPERIUM
+    </button>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<audio id="hoverSound">
+    <source src="hover.mp3" type="audio/mp3">
+</audio>
+
+<header>
+
+    <h1>WARHAMMER 40,000</h1>
+    <h2>SECRET LEVEL</h2>
+
+    <div class="music-controls">
+        <button onclick="playMusic()">▶ Play Music</button>
+        <button onclick="pauseMusic()">⏸ Pause Music</button>
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <h2>FOR THE EMPEROR</h2>
+
+    <p>
+        Explore the story of Lieutenant Titus and the
+        Ultramarines from Amazon's Secret Level.
+    </p>
+
+</section>
+
+<section class="lore">
+
+    <h2>SECRET LEVEL LORE</h2>
+
+    <p>
+        Secret Level follows Titus and his battle-brothers
+        Chairon and Gadriel during a dangerous mission.
+        The episode showcases the grim darkness of the
+        Warhammer 40K universe.
+    </p>
+
+</section>
+
+<section class="timeline">
+
+    <h2>MISSION TIMELINE</h2>
+
+    <div class="event">
+        <h3>Deployment</h3>
+        <p>Ultramarines arrive at the battlefield.</p>
+    </div>
+
+    <div class="event">
+        <h3>Enemy Contact</h3>
+        <p>The horrors of the galaxy reveal themselves.</p>
+    </div>
+
+    <div class="event">
+        <h3>The Emperor's Wrath</h3>
+        <p>Titus leads the assault.</p>
+    </div>
+
+</section>
+
+<section class="characters">
+
+    <div class="card"
+        onclick="window.open('https://warhammer40k.fandom.com/wiki/Demetrian_Titus','_blank')">
+
+        <img src="images/titus.jpg" alt="Titus">
+
+        <h3>Lieutenant Titus</h3>
+
+        <p>Veteran Ultramarine hero.</p>
+    </div>
+
+    <div class="card"
+        onclick="window.open('https://warhammer40k.fandom.com/wiki/Chairon','_blank')">
+
+        <img src="images/chairon.jpg" alt="Chairon">
+
+        <h3>Chairon</h3>
+
+        <p>Faithful battle-brother.</p>
+    </div>
+
+    <div class="card"
+        onclick="window.open('https://warhammer40k.fandom.com/wiki/Gadriel','_blank')">
+
+        <img src="images/gadriel.jpg" alt="Gadriel">
+
+        <h3>Gadriel</h3>
+
+        <p>Ultramarine warrior.</p>
+    </div>
+
+    <div class="card"
+        onclick="window.open('https://warhammer40k.fandom.com/wiki/Marneus_Calgar','_blank')">
+
+        <img src="images/calgar.jpg" alt="Calgar">
+
+        <h3>Marneus Calgar</h3>
+
+        <p>Chapter Master of the Ultramarines.</p>
+    </div>
+
+    <div class="card"
+        onclick="window.open('https://warhammer40k.fandom.com/wiki/Emperor_of_Mankind','_blank')">
+
+        <img src="images/emperor.jpg" alt="Emperor">
+
+        <h3>The Emperor</h3>
+
+        <p>Master of Mankind.</p>
+    </div>
+
+</section>
+
+<!-- CHARACTER PROFILES SECTION -->
+
+<section class="character-profiles">
+
+    <h2>HEROES OF THE IMPERIUM</h2>
+
+    <div class="profile">
+
+        <img src="images/titus.jpg" alt="Lieutenant Titus">
+
+        <div class="profile-text">
+            <h3>Lieutenant Titus</h3>
+
+            <p>
+                Titus is a legendary Ultramarines officer known for his
+                courage, leadership, and unwavering loyalty to humanity.
+                A veteran of countless battles, he stands as one of the
+                Imperium's greatest heroes.
+            </p>
+
+            <a href="https://warhammer40k.fandom.com/wiki/Demetrian_Titus"
+               target="_blank">
+                Learn More
+            </a>
+        </div>
+
+    </div>
+
+    <div class="profile">
+
+        <img src="images/chairon.jpg" alt="Chairon">
+
+        <div class="profile-text">
+            <h3>Chairon</h3>
+
+            <p>
+                Chairon is a steadfast Ultramarine warrior who fights
+                beside Titus. His discipline, skill, and devotion to the
+                Emperor make him a valuable member of the squad.
+            </p>
+
+            <a href="https://warhammer40k.fandom.com/wiki/Chairon"
+               target="_blank">
+                Learn More
+            </a>
+        </div>
+
+    </div>
+
+    <div class="profile">
+
+        <img src="images/gadriel.jpg" alt="Gadriel">
+
+        <div class="profile-text">
+            <h3>Gadriel</h3>
+
+            <p>
+                Gadriel is an experienced battle-brother of the
+                Ultramarines. Fierce in combat and loyal to his duty,
+                he helps Titus overcome overwhelming threats.
+            </p>
+
+            <a href="https://warhammer40k.fandom.com/wiki/Gadriel"
+               target="_blank">
+                Learn More
+            </a>
+        </div>
+
+    </div>
+
+    <div class="profile">
+
+        <img src="images/calgar.jpg" alt="Marneus Calgar">
+
+        <div class="profile-text">
+            <h3>Marneus Calgar</h3>
+
+            <p>
+                Chapter Master of the Ultramarines, Marneus Calgar is
+                one of the Imperium's most respected leaders. His wisdom,
+                strength, and strategic genius have saved countless worlds.
+            </p>
+
+            <a href="https://warhammer40k.fandom.com/wiki/Marneus_Calgar"
+               target="_blank">
+                Learn More
+            </a>
+        </div>
+
+    </div>
+
+    <div class="profile">
+
+        <img src="images/emperor.jpg" alt="The Emperor">
+
+        <div class="profile-text">
+            <h3>The Emperor of Mankind</h3>
+
+            <p>
+                The Emperor is the immortal ruler of humanity and the
+                guiding force behind the Imperium. His influence spans
+                the entire galaxy and inspires billions.
+            </p>
+
+            <a href="https://warhammer40k.fandom.com/wiki/Emperor_of_Mankind"
+               target="_blank">
+                Learn More
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h2>BATTLE GALLERY</h2>
+
+    <div class="gallery-grid">
+
+        <img src="images/gallery1.jpg">
+        <img src="images/gallery2.jpg">
+        <img src="images/gallery3.jpg">
+        <img src="images/gallery4.jpg">
+        <img src="images/gallery5.jpg">
+        <img src="images/gallery6.jpg">
+
+    </div>
+
+</section>
+
+<section class="quotes">
+
+    <button onclick="randomQuote()">
+        Receive Imperial Wisdom
+    </button>
+
+    <h3 id="quote"></h3>
+
+</section>
+
+<section class="steam-section">
+
+    <h2>PLAY WARHAMMER 40,000: SPACE MARINE 2</h2>
+
+    <p>
+        Continue Titus' story and battle the Tyranid hordes
+        in the official game.
+    </p>
+
+    <div class="steam-buttons">
+
+        <a href="https://store.steampowered.com/app/2183900/Warhammer_40000_Space_Marine_2/"
+           target="_blank"
+           class="steam-btn">
+
+           PLAY ON STEAM
+
+        </a>
+
+        <a href="https://store.steampowered.com/app/2183900/Warhammer_40000_Space_Marine_2/"
+           target="_blank"
+           class="download-btn">
+
+           DOWNLOAD GAME
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        In the Grim Darkness of the Far Future,
+        There Is Only War.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

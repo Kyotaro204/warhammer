@@ -1,0 +1,326 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+#stars{
+position:fixed;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(white 1px, transparent 1px);
+background-size:40px 40px;
+opacity:.3;
+z-index:-1;
+animation:starsMove 80s linear infinite;
+}
+
+@keyframes starsMove{
+from{background-position:0 0;}
+to{background-position:0 2000px;}
+}
+
+#intro{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:9999;
+}
+
+#intro h1{
+font-size:5rem;
+color:gold;
+text-shadow:0 0 20px gold;
+}
+
+#intro h2{
+margin:20px;
+}
+
+.enterBtn{
+padding:15px 30px;
+font-size:1rem;
+background:gold;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+header{
+padding:80px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:4rem;
+color:gold;
+}
+
+.hero,
+.lore,
+.timeline,
+.gallery,
+.quotes{
+padding:60px 20px;
+text-align:center;
+}
+
+.characters{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:50px;
+}
+
+.card{
+width:300px;
+background:#111;
+border:2px solid gold;
+border-radius:15px;
+overflow:hidden;
+cursor:pointer;
+transition:.5s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px gold;
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+color:gold;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border:2px solid gold;
+transition:.5s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.event{
+max-width:700px;
+margin:25px auto;
+border-left:3px solid gold;
+padding-left:20px;
+text-align:left;
+}
+
+button{
+padding:10px 20px;
+margin:5px;
+border:none;
+cursor:pointer;
+background:gold;
+font-weight:bold;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:black;
+}
+
+.steam-section{
+    padding:80px 20px;
+    text-align:center;
+    background:
+    linear-gradient(
+        rgba(10,10,10,.95),
+        rgba(0,0,0,.98)
+    );
+    border-top:2px solid gold;
+}
+
+.steam-section h2{
+    color:gold;
+    font-size:2.5rem;
+    margin-bottom:20px;
+    text-shadow:0 0 15px gold;
+}
+
+.steam-section p{
+    color:#ccc;
+    margin-bottom:30px;
+    font-size:1.1rem;
+}
+
+.steam-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.steam-btn,
+.download-btn{
+
+    text-decoration:none;
+    color:black;
+    background:gold;
+
+    padding:15px 35px;
+
+    font-weight:bold;
+    border-radius:10px;
+
+    transition:.4s;
+}
+
+.steam-btn:hover,
+.download-btn:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:
+    0 0 20px gold,
+    0 0 40px gold;
+}
+
+/* CHARACTER PROFILES */
+
+.character-profiles{
+    max-width:1200px;
+    margin:80px auto;
+    padding:20px;
+}
+
+.character-profiles h2{
+    text-align:center;
+    color:#d4af37;
+    font-size:3rem;
+    margin-bottom:50px;
+    text-shadow:0 0 15px gold;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    background:rgba(15,15,15,0.95);
+
+    border:2px solid #d4af37;
+    border-radius:20px;
+
+    padding:25px;
+    margin-bottom:40px;
+
+    transition:0.4s;
+}
+
+.profile:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 0 20px gold,
+        0 0 40px rgba(255,215,0,0.4);
+}
+
+.profile img{
+    width:280px;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+    border:2px solid gold;
+
+    transition:0.4s;
+}
+
+.profile:hover img{
+    transform:scale(1.05);
+}
+
+.profile-text{
+    flex:1;
+}
+
+.profile-text h3{
+    color:#d4af37;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.profile-text p{
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#ddd;
+}
+
+.profile-text a{
+    display:inline-block;
+
+    background:#d4af37;
+    color:black;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    padding:12px 25px;
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.profile-text a:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px gold;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .profile{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile img{
+        width:100%;
+        max-width:350px;
+        height:auto;
+    }
+
+    .profile-text h3{
+        font-size:1.8rem;
+    }
+}
